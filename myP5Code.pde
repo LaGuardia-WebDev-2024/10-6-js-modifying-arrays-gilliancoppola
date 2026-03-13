@@ -25,9 +25,12 @@ if(mousePressed){
 
 var drawStars = function() {
     for (var i = 0; i < yPositions.length; i++) {
+        textSize(100);
+        text("🚀", 200, 200);
+        textSize(15);
         text("⭐", xPositions[i], yPositions[i]);
         xPositions[i]--;
-        yPositions[i]--;
+        yPositions[i]++;
     }
 };
 
